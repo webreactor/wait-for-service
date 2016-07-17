@@ -52,7 +52,7 @@ user@ubuntu1:~$ wait-for-service mysql.local 3306
 [23] Sat Jul 16 20:33:17 CDT 2016 Waiting for mysql.local:3306
 [22] Sat Jul 16 20:33:18 CDT 2016 Waiting for mysql.local:3306
 [21] Sat Jul 16 20:33:19 CDT 2016 Waiting for mysql.local:3306
-mysql.local:3306 is available
+[20] Sat Jul 16 20:33:18 CDT 2016 mysql.local:3306 is available
 
 
 ```
