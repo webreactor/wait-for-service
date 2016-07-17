@@ -5,7 +5,7 @@ A simple bash script that waits till specified socket starts listening.
 
 The script is very usefull for docker containers that should wait for other microservices until actually start.
 
-The script will exist immideatly is target socket is listening.
+wait-for-service will exist immideatly is target socket is listening.
 
 `sudo make install`
 
