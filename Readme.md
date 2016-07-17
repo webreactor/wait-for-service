@@ -19,6 +19,10 @@ sudo chmod a+x /usr/local/bin/wait-for-service
 
 ### Usage
 
+`wait-for-service host port [rounds [delay]]`
+
+wait-for-service will wait unlimited time if rounds is 0 
+
 ```bash
 
 # wait for 30 rounds by 1 sec (default)
