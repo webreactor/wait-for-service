@@ -1,0 +1,28 @@
+#!/bin/bash
+
+WAIT_HOST="$1"
+WAIT_PORT="$2"
+TRIES=${3:-30}
+DELAY=${4:-1}
+
+if [ "$(which ncd)" = "" ]; then
+    echo Missing nc
+    echo This might help: apt-get install netcat
+    exit 1
+fi
+
+if [ "$WAIT_PORT" = "" ]; then
+    echo "wait-for-service host port [[tries] deplay]"
+    exit 1
+fi
+
+while ! nc -q 1 $WAIT_HOST $WAIT_PORT </dev/null; do
+    sleep $DELAY
+    echo  [$TRIES] $(date) Waiting for $WAIT_HOST:$WAIT_PORT
+    if (( $TRIES == 1 )); then
+        exit 1
+    fi
+    let TRIES-=1
+done
+
+echo  $WAIT_HOST:$WAIT_PORT is available
