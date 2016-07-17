@@ -36,3 +36,23 @@ wait-for-service webapp.com 80 60
 wait-for-service webapp.com 80 60 10
 
 ```
+
+### Example
+
+```bash
+
+user@ubuntu1:~$ wait-for-service mysql.local 3306
+[30] Sat Jul 16 20:33:10 CDT 2016 Waiting for mysql.local:3306
+[29] Sat Jul 16 20:33:11 CDT 2016 Waiting for mysql.local:3306
+[28] Sat Jul 16 20:33:12 CDT 2016 Waiting for mysql.local:3306
+[27] Sat Jul 16 20:33:13 CDT 2016 Waiting for mysql.local:3306
+[26] Sat Jul 16 20:33:14 CDT 2016 Waiting for mysql.local:3306
+[25] Sat Jul 16 20:33:15 CDT 2016 Waiting for mysql.local:3306
+[24] Sat Jul 16 20:33:16 CDT 2016 Waiting for mysql.local:3306
+[23] Sat Jul 16 20:33:17 CDT 2016 Waiting for mysql.local:3306
+[22] Sat Jul 16 20:33:18 CDT 2016 Waiting for mysql.local:3306
+[21] Sat Jul 16 20:33:19 CDT 2016 Waiting for mysql.local:3306
+mysql.local:3306 is available
+
+
+```
