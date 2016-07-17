@@ -12,7 +12,7 @@ wait-for-service will exist immideatly is target socket is listening.
 or download binary:
 
 ```bash
-sudo curl -L  ... > /usr/local/bin/wait-for-service
+sudo curl -L  https://github.com/webreactor/wait-for-service/releases/download/0.0.1/wait-for-service > /usr/local/bin/wait-for-service
 sudo chmod a+x /usr/local/bin/wait-for-service
 ```
 
