@@ -1,11 +1,13 @@
 wait-for-service
 ================
 
-A simple bash script that waits till specified socket starts listening
+A simple bash script that waits till specified socket starts listening.
 
-Exists immideatly is target socket is listening
+The script is very usefull for docker containers that should wait for other microservices until actually start.
 
-`make install`
+The script will exist immideatly is target socket is listening.
+
+`sudo make install`
 
 or download binary:
 
@@ -13,6 +15,7 @@ or download binary:
 sudo curl -L  ... > /usr/local/bin/wait-for-service
 sudo chmod a+x /usr/local/bin/wait-for-service
 ```
+
 
 ### Usage
 
