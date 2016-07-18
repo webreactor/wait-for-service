@@ -14,7 +14,7 @@ or download binary:
 ```bash
 curl -L https://raw.githubusercontent.com/webreactor/wait-for-service/master/wait-for-service > wait-for-service
 chmod a+x wait-for-service
-sudo mv /usr/local/bin/wait-for-service
+sudo mv wait-for-service /usr/local/bin/wait-for-service
 ```
 
 
