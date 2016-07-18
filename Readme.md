@@ -7,6 +7,17 @@ The script is very usefull for docker containers that should wait for other micr
 
 wait-for-service will exist immideatly is target socket is listening.
 
+
+Dump will be loaded only when mysql container starts
+
+```bash
+wait-for-service mysql.local 3306
+mysql mysql.local database < dump.sql 
+```
+
+
+## Install 
+
 `sudo make install`
 
 or download binary:
@@ -33,14 +44,14 @@ wait-for-service will wait unlimited time if rounds is 0
 ```bash
 
 # wait for 30 rounds by 1 sec (default)
-wait-for-service webapp.com 80
+wait-for-service webapp.com
 
 # wait for 60 seconds
-wait-for-service webapp.com 80 60
+wait-for-service mysqlapp.com 3306 60
 
 
 # wait for 60 rounds by 10 seconds
-wait-for-service webapp.com 80 60 10
+wait-for-service mysqlapp.com 3306 60 10
 
 ```
 
