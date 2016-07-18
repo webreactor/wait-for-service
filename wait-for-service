@@ -1,7 +1,7 @@
 #!/bin/bash
 
 WAIT_HOST="$1"
-WAIT_PORT="$2"
+WAIT_PORT=${2:-80}
 ROUNDS=${3:-30}
 DELAY=${4:-1}
 
@@ -11,8 +11,8 @@ if [ "$(which nc)" == "" ]; then
     exit 1
 fi
 
-if [ "$WAIT_PORT" == "" ]; then
-    echo "wait-for-service host port [[rounds] deplay]"
+if [ "$WAIT_HOST" == "" ]; then
+    echo "wait-for-service host [port] [rounds] [deplay]"
     exit 1
 fi
 
