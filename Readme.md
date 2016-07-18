@@ -19,7 +19,13 @@ sudo chmod a+x /usr/local/bin/wait-for-service
 
 ### Usage
 
-`wait-for-service host port [rounds [delay]]`
+`wait-for-service host [port] [rounds] [delay]`
+
+Defaults:
+
+- port 80
+- rounds 30
+- delay 1 (second)
 
 wait-for-service will wait unlimited time if rounds is 0 
 
